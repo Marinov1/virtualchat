@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="form1">
+Name: <input name="name" type="text" size="20">
+</form>
+<button onclick="outputname()">Поздрави!</button>
+
+<form id="form2">
+How are you? <input name="feeling" type="text" size="20">
+</form>
+<button onclick="answer()">Отговори!</button>
+
+<form id="form3">
+How old are you? <input name="age" type="text" size="20">
+</form>
+<button onclick="ages()">Изпрати!</button>
+
+<form id="form4">
+Where are you from? <input name="from" type="text" size="20">
+</form>
+<button onclick="froms()">Отговори!</button>
+
+
+
+<script>
+function outputname() {
+var x,y,name;
+x=document.getElementById("form1");
+y=x.elements["name"].value;
+document.getElementById("demo").innerHTML="Hello, " + "" + y;
+}
+function answer() {
+var x1,y1,feeling;
+x1=document.getElementById("form2");
+y1=x1.elements["feeling"].value;
+document.getElementById("medo").innerHTML="И аз така!";
+}
+function ages() {
+var x2,y2,age;
+x2=document.getElementById("form3");
+y2=x2.elements["age"].value;
+document.getElementById("gedo").innerHTML="Аз съм на 15.";
+}
+function froms() {
+var x3, y3, from;
+x3=document.getElementById("form4");
+y3=x3.elements["from"].value;
+document.getElementById("steko").innerHTML="Аз съм от България.";
+} 
+
+
+
+</script>
+
+<p id="demo"></p>
+<p id="medo"></p>
+<p id="gedo"></p>
+<p id="steko"></p>
+
+
+
+
+</body>
+</html>
